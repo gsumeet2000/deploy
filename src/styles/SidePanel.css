@@ -1,0 +1,136 @@
+.sidePanel {
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 20vw;
+  background-color: rgba(124, 123, 123, 0.685);
+}
+.display.sidePanel {
+  display: none;
+}
+.inputForm {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4vh;
+  background-color: rgba(241, 241, 241, 0.712);
+}
+.urlInput {
+  width: 77%;
+  height: 80%;
+  border: none;
+  font-size: 130%;
+}
+.urlInput:focus {
+  outline-width: 0px;
+  box-shadow: inset 0 0 1pt 1pt #d3d3d3;
+}
+
+.button {
+  height: 100%;
+  min-width: 12%;
+  font-size: 90%;
+  border: none;
+  background-color: transparent;
+}
+
+.button:hover,
+.urlContainer:hover {
+  background-color: rgba(245, 244, 244, 0.438);
+  cursor: pointer;
+}
+
+.urlList {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(245, 244, 244, 0.438);
+  padding: 0px 5px;
+  position: relative;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.urlList::-webkit-scrollbar {
+  display: none;
+}
+.urlContainer {
+  display: flex;
+  align-items: center;
+  height: 9vh;
+  margin-top: 5px;
+  background-color: rgba(241, 241, 241, 0.171);
+  width: 100%;
+  padding: 0px;
+  /* cursor: pointer; */
+}
+.urlContainer.activeUrl {
+  background-color: rgba(160, 155, 155, 0.623);
+}
+.setIframe{
+  width: 90%;
+}
+.url {
+  height: auto;
+  line-break: anywhere;
+  width: 88%;
+  /* text-align: center; */
+}
+.urlOptions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #7a76767c;
+  width: 30%;
+  height: fit-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+.urlOptions.button:hover .options{
+  display: block ;
+}
+.options button{
+  width: 100%;
+  text-align: center;
+  border:.5px solid #fffefe;
+}
+.inputForm.title{
+  margin: 0%;
+}
+.urlInput.title{
+  width: auto;
+}
+.addTitle{
+  width: fit-content;
+}
+@media only screen and (max-width: 950px) {
+  .sidePanel {
+    width: 35%;
+  }
+  .inputForm {
+    margin-left: 5vw;
+  }
+  .urlInput {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .sidePanel {
+    min-width: 100%;
+  }
+  .sidePanel.phoneView {
+    display: none;
+  }
+  .sidePanel .inputForm {
+    margin-left: 0vw;
+  }
+  .urlInput {
+    width: 80%;
+  }
+}

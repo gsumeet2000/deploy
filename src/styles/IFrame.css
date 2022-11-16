@@ -1,0 +1,29 @@
+.iFrame {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 153, 148, 0.637);
+}
+
+.frame {
+  height: 100%;
+  width: 100%;
+  border: 0px;
+  outline: none;
+}
+
+@media only screen and (max-width: 550px) {
+  .iFrame {
+    display: none;
+  }
+  .iFrame.phoneview{
+    display: block ;
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .iFrame {
+    width: 75%;
+  }
+
+}
